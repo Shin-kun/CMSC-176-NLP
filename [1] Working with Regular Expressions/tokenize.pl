@@ -1,9 +1,13 @@
+# Michael Loewe Alivio
+# Gamaliel Petralba
 use strict;
 use warnings;
 use feature 'say';
 
 my $text = "";
-my $input_file = "input.txt";
+print "Input text file: ";
+my $input_file = <STDIN>;
+chomp($input_file);
 
 open my $fh, '<', $input_file
     or die "Can't open file : $!";
